@@ -21,7 +21,12 @@ public class ScheduleTask {
 //        System.out.println("Hola Mundo!!");
 //    }
 
-    @Scheduled(cron = "*/10 * * * * *", zone = "America/Bogota")
+//    @Scheduled(cron = "*/10 * * * * *", zone = "America/Bogota")
+//    public void scheduleMessage() {
+//        System.out.println("Hola Mundo!!");
+//    }
+
+    @Scheduled(cron = "0 0 7 ? * MON,WED,FRI", zone = "America/Bogota")
     public void scheduleMessage() {
         System.out.println("Hola Mundo!!");
     }
